@@ -1,70 +1,82 @@
-# Getting Started with Create React App
+Login Page Project
+Description
+This project is a simple login page created with React and styled-components. It features a form that allows users to log in by providing a username, password, and selecting their role (employee, manager, senior manager). The form submission is handled with an asynchronous request to an API endpoint.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Features
+Responsive Design: The page is designed to be responsive and adapts to various screen sizes.
+Styled-components: The project uses styled-components for styling, allowing for scoped and modular CSS.
+Form Validation: Basic client-side validation is implemented to ensure that the username and password fields are not empty.
+Error Handling: The application provides feedback to the user if the login attempt fails.
+Async/Await for API Requests: The form submission is handled using async/await for clean and readable asynchronous code.
+Technologies Used
+React
+styled-components
+Fetch API for asynchronous requests
+Project Structure
+php
+Copy code
+LoginPageProject
+│
+├── public
+│   └── background.jpg      # Background image used in the ImageContainer component
+│
+├── src
+│   ├── components
+│   │   └── Login.js        # Main Login component
+│   │
+│   ├── App.js              # Main application entry point
+│   └── index.js            # React DOM rendering
+│
+├── .gitignore
+├── package.json
+└── README.md
+Getting Started
+Prerequisites
+Make sure you have the following installed on your local development environment:
 
-## Available Scripts
+Node.js (v14 or higher)
+npm (v6 or higher)
+Installation
+Clone the repository:
 
-In the project directory, you can run:
+bash
+Copy code
+git clone https://github.com/your-username/LoginPageProject.git
+cd LoginPageProject
+Install dependencies:
 
-### `npm start`
+bash
+Copy code
+npm install
+Running the Project
+To start the development server, run:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+bash
+Copy code
+npm start
+This will launch the application and open it in your default web browser. The development server will automatically reload the page if you make changes to the code.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Building the Project
+To build the project for production, run:
 
-### `npm test`
+bash
+Copy code
+npm run build
+This will create an optimized build of the project in the build directory.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Usage
+Open the login page in your browser.
+Enter your username and password.
+Select your role from the dropdown menu.
+Click the "Login" button to submit the form.
+If the login is successful, you will see a success message. If the login fails, an error message will be displayed.
+API Endpoint
+The login form submits a POST request to the /api/login endpoint. The request body includes the following fields:
 
-### `npm run build`
+username: The username entered by the user.
+passwordLogin: The password entered by the user.
+roleLogin: The role selected by the user.
+The server is expected to respond with a JSON object containing a message field indicating the result of the login attempt.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Contributing
+Contributions are welcome! If you have any suggestions or improvements, feel free to create an issue or submit a pull request.
